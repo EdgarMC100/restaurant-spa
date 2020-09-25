@@ -1,0 +1,398 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    background: url('../assets/img/bg.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .container{
+    position: relative;
+    height: 550px;
+}
+
+header .icon{
+    display: none;
+    color: aliceblue;
+    float: right;
+}
+
+header .menu{
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 10px;
+}
+
+header .menu a:hover{
+    border-bottom: 1px solid oldlace;
+}
+
+header .menu a.delete{
+    display: none;
+}
+
+header .texts{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    margin-top: -120px;
+    right: -200px;
+}
+
+header .texts .name{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom:0px;
+    /* text-decoration: underline; */
+}
+
+header .texts .name span{
+    font-weight: 600;
+    margin-left: 0px;
+    letter-spacing: 3px;
+
+}
+
+header .texts h3{
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*------ M   A   I    N ---------*/
+.main{
+    background: url('../assets/img/bg-textura.png');
+    background-repeat: repeat;
+}
+
+.main .container{
+    overflow: visible;
+    position: relative;
+}
+
+.main .container .photo{
+    width:80%;
+    position: absolute;
+    top:-50px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .container .photo img{
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+}
+
+.main .about article{
+    background-color: white;
+    padding: 40px;
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    top:200px;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+
+}
+
+.main .about article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .about article p{
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.main .menu{
+    padding-top: 650px;
+    margin-bottom: 50px;
+}
+
+.main .menu .title{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .menu .container-menu,
+.main .menu .container-menu-inner{
+    border: 1px solid #000;
+    background: transparent;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.main .container-menu-inner article p.category{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.main .container-menu-inner article{
+    float: left;
+    width: 50%;
+    /* margin-bottom: 20px; */
+    padding: 20px;
+}
+
+.main .container-menu-inner article .plate .description{
+    display: inline-block;
+}
+
+.main .container-menu-inner article .plate .price{
+    float: right;
+    /* margin-right: 20px; */
+    
+}
+
+.main .gallery{
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+}
+.main .gallery .photo{
+    width: 25%;
+    float: left;
+}
+
+.main .gallery .photo img{
+    vertical-align: top;
+    width: 100%;
+    opacity: .7;
+}
+
+.main .gallery .photo img:hover{
+    opacity: 1;
+    transition: all 1.5s linear;
+}
+
+
+.main .ubication{
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.main .ubication h3{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 50px;
+}
+
+.main .ubication .address,
+.main .ubication .schedule{
+    width: 50%;
+}
+
+.main .ubication .address{
+    float: left;
+}
+.main .ubication .address .street{
+    /* margin-bottom: 20px; */
+    margin-bottom: 1em ;
+}
+.main .ubication .schedule{
+    float: right;
+    text-align: center;
+    /* padding: 0 50px; */
+}
+
+.main .ubication .schedule h2{
+    font-weight: 700;
+    font-size: 1em;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.main .ubication .schedule p.week{
+    float: left;
+}
+
+.main .ubication .schedule p.weekend{
+    float: right;
+}
+
+.main .map iframe{
+    width: 100%;
+    vertical-align: top;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color:white;
+    padding: 20px;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width:800px){
+    header .menu{
+        text-align:center;
+        /* text-align: Center; */
+    }
+
+    header .menu a{
+        font-size: 1em;
+    }
+
+    header .menu a{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    header .container{
+        height: 400px;
+    }
+    
+    header .texts{
+        margin-top: 0;
+        right: 0;
+    }
+
+    header .texts .name{
+        font-size: 2.5em;
+    }
+
+    .main .container .photo{
+        position: relative;
+        z-index: 0;
+    }
+
+    .main .container .photo{
+        width: 100%;
+    }
+
+    .main .about article{
+        width: 100%;
+        z-index: 0;
+        position: relative;
+        top:-50px;
+    }
+
+    .main .menu{
+        padding-top: 100px;
+    }
+
+    .main .container-menu-inner article{
+        float:none;
+        width: 100%;
+    }
+    
+    .main .gallery .photo{
+        width: 50%;
+    }
+    .main .gallery .photo img{
+        opacity: 1;
+    }
+
+    .main .ubication .address,
+    .main .ubication .schedule{
+        width: 100%;
+        float: none;
+    }
+    
+    .main .ubication .schedule{
+        margin-top: 50px;
+    }
+    /* .main .ubication .address{
+        display: flex;
+        flex-direction: row;
+    } */
+    .map{
+        background-color: white;
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width:450px){
+    header .container{
+        margin-right: 0px;
+        /* margin-left: 0px; */
+    }
+    header .menu{
+        display: none;
+        flex-flow: column wrap;
+        font-size: 2em;
+        line-height: 60px;
+        position: absolute;
+        width: 100%;
+        height:auto;
+        background-color: rgba(40,18,4,.85);
+        float: right;
+        top:0;
+        right: 0;
+        overflow: hidden;   
+        z-index: 99;     
+    }
+
+    
+    header .icon{
+        margin-right: 40px;
+        display: block;
+        float: right;
+        color: aliceblue;
+        font-size: 2em;
+    }
+    header .menu a{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    header .menu a:hover{
+        background-color: aliceblue;
+        color: rgb(40,18,4);
+    }
+    
+    header .menu a.delete{
+        float: left;
+        display: block;
+    }
+
+    header .menu a.delete:hover{
+        background-color: transparent;
+        color: white;
+        border-bottom: none;
+    }
+}
