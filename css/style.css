@@ -38,6 +38,7 @@ header .icon{
 }
 
 header .menu{
+    display: none;
     width: 100%;
     text-align: right;
 }
@@ -62,6 +63,7 @@ header .menu a.delete{
 }
 
 header .texts{
+    display: none;
     width: 100%;
     color: #fff;
     position: absolute;

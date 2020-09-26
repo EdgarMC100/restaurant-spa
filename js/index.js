@@ -5,17 +5,22 @@
 // console.log(menuElements);
 $(document).ready(function(){
     let icon = document.getElementById("icon");
-let menu = document.getElementById("nav");
-let del = document.getElementById("delete");
-icon.addEventListener("click",function showMenu() {
-    menu.style.display="flex";
-    icon.style.display="none";
-});
+    let menu = document.getElementById("nav");
+    let texts = document.getElementById("texts");
+    menu.style.display = "block";
+    texts.style.display = "block";
 
-del.addEventListener("click",function hideMenu() {
-    menu.style.display="none";
-    icon.style.display="block";
-});
+    let del = document.getElementById("delete");
+    icon.addEventListener("click",function showMenu() {
+        menu.style.display="flex";
+        icon.style.display="none";
+    });
+
+    del.addEventListener("click",function hideMenu() {
+        menu.style.display="none";
+        icon.style.display="block";
+    });
+
     if($(window).width() > 800){
         $('.menu a').each(function(index,element) {
 
