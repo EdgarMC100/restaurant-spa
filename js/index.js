@@ -1,4 +1,10 @@
-let icon = document.getElementById("icon");
+
+
+// let menuElements = document.getElementById("nav").children;
+// menuElements.
+// console.log(menuElements);
+$(document).ready(function(){
+    let icon = document.getElementById("icon");
 let menu = document.getElementById("nav");
 let del = document.getElementById("delete");
 icon.addEventListener("click",function showMenu() {
@@ -10,11 +16,6 @@ del.addEventListener("click",function hideMenu() {
     menu.style.display="none";
     icon.style.display="block";
 });
-
-// let menuElements = document.getElementById("nav").children;
-// menuElements.
-// console.log(menuElements);
-$(document).ready(function(){
     if($(window).width() > 800){
         $('.menu a').each(function(index,element) {
 
