@@ -11,3 +11,31 @@ del.addEventListener("click",function hideMenu() {
     icon.style.display="block";
 });
 
+// let menuElements = document.getElementById("nav").children;
+// menuElements.
+// console.log(menuElements);
+$(document).ready(function(){
+    if($(window).width() > 800){
+        $('.menu a').each(function(index,element) {
+
+            $(this).css({
+                top: '-200px',
+                position: 'relative'
+            });
+    
+            $(this).animate({
+                top: '0'
+            },2000 + (index * 600));
+        });
+
+        $('header .texts').css({
+            opacity:0,
+            marginTop:0
+        });
+
+        $('header .texts').animate({
+            opacity: 1,
+            marginTop: '-52px'
+        }, 1500);
+    }
+});
