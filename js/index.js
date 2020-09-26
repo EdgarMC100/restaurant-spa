@@ -7,8 +7,7 @@ $(document).ready(function(){
     let icon = document.getElementById("icon");
     let menu = document.getElementById("nav");
     let texts = document.getElementById("texts");
-    menu.style.display = "block";
-    texts.style.display = "block";
+
 
     let del = document.getElementById("delete");
     icon.addEventListener("click",function showMenu() {
@@ -43,5 +42,8 @@ $(document).ready(function(){
             opacity: 1,
             marginTop: '-52px'
         }, 1500);
+
+        menu.style.display = "inline-block";
+        texts.style.display = "block";
     }
 });
