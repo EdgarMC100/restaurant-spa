@@ -45,5 +45,7 @@ $(document).ready(function(){
 
         menu.style.display = "inline-block";
         texts.style.display = "block";
+    }else{
+        texts.style.display = "block";
     }
 });
