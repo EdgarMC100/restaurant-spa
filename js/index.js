@@ -30,7 +30,7 @@ $(document).ready(function(){
     
             $(this).animate({
                 top: '0'
-            },2000 + (index * 600));
+            },2000 + (index * 500));
         });
 
         $('header .texts').css({
@@ -41,7 +41,7 @@ $(document).ready(function(){
         $('header .texts').animate({
             opacity: 1,
             marginTop: '-52px'
-        }, 1500);
+        }, 2500);
 
         menu.style.display = "inline-block";
         texts.style.display = "block";
